@@ -1,0 +1,313 @@
+@import url("./reset.css");
+
+html {
+  scroll-behavior: smooth;
+  margin: 0px;
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(252.44deg, #552031 0%, #0B0D22 100%);
+  box-sizing: border-box;
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #29436900;
+  margin-block: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0b0d2238;
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #f7a2cd00;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0b0d2279;
+}
+
+/* Page Header Style */
+.pageHeader {
+  background: rgba(17, 17, 17, 0.322);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: solid 2px rgba(255, 129, 161, 0.5);
+  gap: 0.8rem;
+  backdrop-filter: blur(5px);
+  box-shadow: 1px 5px 5px rgba(27, 27, 27, 0.295);
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.headerTitleText {
+  font-family: 'Raleway', serif;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.headerNavigationMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1.2rem;
+}
+
+.menuOption {
+  font-family: 'Inter', serif;
+  color: white;
+  text-decoration: none;
+  border-bottom: 0.2px solid rgba(255, 255, 255, 0);
+  transition: 1s;
+}
+
+.menuOption:after {
+  display: block;
+  content: '';
+  border-bottom: 0.2px solid #ff6d9b;
+  transform: scaleX(0);
+  transition: 1s;
+}
+
+.menuOption:hover {
+  color: #ff6d9b;
+}
+
+.menuOption:hover:after {
+  transform: scaleX(1);
+}
+
+/* Main Page Content Style */
+.mainContentParentDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mainContentTitle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.7rem;
+}
+
+.mainContentTitleText {
+  font-family: 'Raleway', serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#titleSpan {
+  font-weight: 700;
+  transition: 1s;
+}
+
+.mainContentTitleText:hover #titleSpan {
+  color: rgb(255, 157, 186);
+}
+
+.middleContentWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 0.5rem;
+}
+
+.firstBiographyContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+}
+
+.firstImageDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding: 5px;
+}
+
+.firstBioDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.firstBiographyText {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-family: 'Oswald', serif;
+  color: white;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.firstImpactTextDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: solid 2px rgb(255, 155, 185);
+  width: 50rem;
+}
+
+.firstImpactText {
+  font-family: 'Oswald', serif;
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#scrollToSecondBio {
+  text-decoration: none;
+}
+
+#collegeTime {
+  transition: 1s;
+}
+
+.firstImpactText:hover #collegeTime {
+  color: rgb(255, 157, 186);
+}
+
+#daniloPic1 {
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 50px;
+  transition: 1s;
+}
+
+#daniloPic1:hover {
+  box-shadow: 5px 5px 10px rgba(255, 142, 199, 0.233);
+}
+
+.secondBiographyContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.secondImageDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding: 10px;
+}
+
+.secondBioDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.secondBiographyText {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-family: 'Oswald', serif;
+  color: white;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.secondImpactTextDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-bottom: solid 2px rgb(255, 155, 185);
+  width: 40rem;
+}
+
+.secondImpactText {
+  font-family: 'Oswald', serif;
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#someSkills {
+  transition: 1s;
+}
+
+.secondImpactText:hover #someSkills {
+  color: rgb(255, 157, 186);
+}
+
+#scrollToSkills {
+  text-decoration: none;
+}
+
+#daniloPic2 {
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 50px;
+  transition: 1s;
+}
+
+#daniloPic2:hover {
+  box-shadow: 5px 5px 10px rgba(255, 142, 199, 0.233);
+}
+
+/* Page Footer Style */
+.pageFooter {
+  background: rgba(17, 17, 17, 0.322);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-top: solid 2px rgba(255, 129, 161, 0.5);
+  gap: 0.8rem;
+  backdrop-filter: blur(5px);
+  box-shadow: 1px 5px 5px rgba(27, 27, 27, 0.295);
+}
