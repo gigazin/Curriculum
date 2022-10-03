@@ -297,6 +297,56 @@ body {
   box-shadow: 5px 5px 10px rgba(255, 142, 199, 0.233);
 }
 
+.mySkills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 20px;
+}
+
+.skillsTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skillsTitleText {
+  font-family: 'Oswald', serif;
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.skillsIconsDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.skillIcon {
+  width: 70px;
+  height: 70px;
+}
+
+.skillsTextDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillsText {
+  font-family: 'Oswald', serif;
+  color: white;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
 /* Page Footer Style */
 .pageFooter {
   background: rgba(17, 17, 17, 0.322);
@@ -305,9 +355,35 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 2.5rem;
   border-top: solid 2px rgba(255, 129, 161, 0.5);
   gap: 0.8rem;
   backdrop-filter: blur(5px);
   box-shadow: 1px 5px 5px rgba(27, 27, 27, 0.295);
+}
+
+.footerTitle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerBackToTop {
+  text-decoration: none;
+}
+
+.footerTitleText {
+  font-family: 'Raleway', serif;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#footerSpan {
+  transition: 1s;
+}
+
+.footerTitleText:hover #footerSpan {
+  color: rgb(255, 157, 186);
 }
