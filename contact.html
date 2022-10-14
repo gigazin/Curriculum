@@ -4,7 +4,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="C" />
+    <title>Contact Danilo Silva</title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./contactStyle.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@300;400;500&family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <main class="mainPageContent">
+      <div class="contactModalParentDiv">
+        <div class="profilePictureDiv">
+          <img
+            src="./assets/images/IMG_20190413_103712_781.jpg"
+            alt="Danilo Silva Profile Picture"
+            class="profilePictureImage"
+            data-tilt
+          />
+        </div>
+        <div class="ownerNameDiv">
+          <h2 class="ownerNameText">Danilo Silva</h2>
+        </div>
+        <div class="ownerTitleDiv">
+          <h4 class="ownerTitleText">
+            Designer | Software Developer | B.Sc. Computer Science student at
+            Catholic University of Pernambuco.
+          </h4>
+        </div>
+        <div class="socialDiv">
+          <div class="contentDivider"></div>
+          <div class="linksDiv">
+            <a href="mailto:gigazin@hotmail.com" target="_blank"
+              ><img
+                src="./assets/images/email.png"
+                alt="Send Mail Message"
+                class="linksPicture"
+                data-tilt
+            /></a>
+            <a href="https://github.com/gigazin" target="_blank"
+              ><img
+                src="./assets/images/github.png"
+                alt="Danilo Silva GitHub"
+                class="linksPicture"
+                data-tilt
+            /></a>
+            <a href="https://www.instagram.com/gigazin/" target="_blank"
+              ><img
+                src="./assets/images/instagram.png"
+                alt="Danilo Silva Instagram"
+                class="linksPicture"
+                data-tilt
+            /></a>
+            <a href="https://www.linkedin.com/in/dansilv/" target="_blank"
+              ><img
+                src="./assets/images/linkedin.png"
+                alt="Danilo Silva LinkedIn"
+                class="linksPicture"
+                data-tilt
+            /></a>
+          </div>
+        </div>
+        <div class="curriculumButtonDiv">
+          <div class="moreAboutTextDiv">
+            <h4 class="moreAboutText">
+              Want to know <span id="moreAbout">more about me</span>?
+            </h4>
+          </div>
+          <button
+            type="button"
+            name="curriculumButton"
+            class="openCurriculumButton"
+            onclick="redirectToCurriculumPage()"
+            data-tilt
+          >
+            <h3 class="buttonText">Curriculum</h3>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <!-- Script -->
+  <script src="./contactScript.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
 </html>

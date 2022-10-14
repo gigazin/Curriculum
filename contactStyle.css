@@ -1,0 +1,183 @@
+@import url("./reset.css");
+
+html {
+  scroll-behavior: smooth;
+  margin: 0px;
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(252.44deg, #552031 0%, #0B0D22 100%);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.mainPageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 120px;
+}
+
+.contactModalParentDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 75px;
+  width: 800px;
+  height: 750px;
+  background-color: rgba(0, 0, 0, 0.253);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.205);
+}
+
+.profilePictureDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePictureImage {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.ownerNameDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.ownerNameDiv:hover {
+  transform: scale(1.03);
+}
+
+.ownerNameText {
+  font-family: 'Inter', serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.ownerTitleDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  transition: 1s;
+}
+
+.ownerTitleDiv:hover {
+  transform: scale(1.03);
+}
+
+.ownerTitleText {
+  font-family: 'Inter', serif;
+  color: white;
+  pointer-events: none;
+  font-size: 1.2rem;
+}
+
+.contentDivider {
+  width: 250px;
+  height: 2px;
+  background-color: rgba(255, 129, 161, 0.5);
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.socialDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.socialDiv:hover .contentDivider {
+  width: 350px;
+}
+
+.linksDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.linksPicture {
+  width: 64px;
+  height: 64px;
+}
+
+.curriculumButtonDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.moreAboutTextDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.moreAboutText, .buttonText {
+  font-family: 'Inter', serif;
+  color: white;
+  font-weight: 400;
+  pointer-events: none;
+  font-size: 2rem;
+}
+
+.moreAboutText {
+  transition: 1s;
+}
+
+.curriculumButtonDiv:hover .moreAboutText {
+  transform: scale(1.03);
+}
+
+.buttonText {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.openCurriculumButton {
+  background-color: #ff6d9b;
+  border: 0;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.openCurriculumButton:hover {
+  background-color: #ac4666;
+}
+
+#moreAbout {
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.curriculumButtonDiv:hover #moreAbout {
+  color: rgb(255, 157, 186);
+}

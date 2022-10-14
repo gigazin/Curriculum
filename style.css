@@ -210,11 +210,12 @@ body {
   height: 700px;
   object-fit: cover;
   border-radius: 50px;
-  transition: 1s;
+  transition: 0.2s;
 }
 
 #daniloPic1:hover {
-  box-shadow: 5px 5px 10px rgba(255, 142, 199, 0.233);
+  transform: scale(1.01);
+  box-shadow: 2px 2px 10px rgba(255, 142, 199, 0.15);
 }
 
 .secondBiographyContent {
@@ -290,11 +291,12 @@ body {
   height: 700px;
   object-fit: cover;
   border-radius: 50px;
-  transition: 1s;
+  transition: 0.2s;
 }
 
 #daniloPic2:hover {
-  box-shadow: 5px 5px 10px rgba(255, 142, 199, 0.233);
+  transform: scale(1.01);
+  box-shadow: 2px 2px 10px rgba(255, 142, 199, 0.15);
 }
 
 .mySkills {
@@ -320,6 +322,12 @@ body {
   font-size: 3rem;
 }
 
+.skillTypeTitle {
+  font-family: 'Oswald', serif;
+  color: white;
+  font-size: 1.3rem;
+}
+
 .skillsIconsDiv {
   display: flex;
   flex-direction: row;
@@ -333,6 +341,10 @@ body {
   height: 70px;
 }
 
+.skillIcon:hover {
+  transform: scale(1.05);
+}
+
 .skillsTextDiv {
   display: flex;
   flex-direction: row;
@@ -342,9 +354,9 @@ body {
 
 .skillsText {
   font-family: 'Oswald', serif;
-  color: white;
+  color: rgba(255, 255, 255, 0.3);
   font-weight: 300;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .contactContent {
